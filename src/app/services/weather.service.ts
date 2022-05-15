@@ -11,6 +11,8 @@ export class WeatherService {
 
   constructor(private http:HttpClient) { }
 
+  //Fetching weather details
+  
   getWeatherData(cityname:any):Observable<weatherDataModel>{
     console.log("in service:",cityname)
     return this.http.get<weatherDataModel>(environment.weatherApiBaseUrl,{
