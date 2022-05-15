@@ -18,8 +18,8 @@
 
 <div class="container">
   <div class="subcontainer1">
-    <img src="assets/images/dayhot.JPG" *ngIf="weatherData.main.temp > 15" />
-    <img src="assets/images/night.JPG" *ngIf="weatherData.main.temp <= 15" />
+    <img src="assets/images/dayhot.jpg" *ngIf="weatherData.main.temp > 15" />
+    <img src="assets/images/night.jpg" *ngIf="weatherData.main.temp <= 15" />
     <div class="weather-data">
       <div class="location">{{ weatherData.name }}</div>
       <div class="temperature">{{ weatherData.main.temp }} ℃</div>
@@ -40,7 +40,7 @@
           "
         >
           <img
-            src="./assets/images/cold.png"
+            src="assets/images/cold.png"
             style="width: 50px; height: 50px"
           />
           <h5>{{ weatherData.main.temp_min }} ℃</h5></span
@@ -57,7 +57,7 @@
           "
         >
           <img
-            src="./assets/images/thermometer.png"
+            src="assets/images/thermometer.png"
             style="width: 50px; height: 50px"
           />
           <h5>{{ weatherData.main.temp_max }} ℃</h5></span
@@ -75,7 +75,7 @@
           "
         >
           <img
-            src="./assets/images/humidity.png"
+            src="assets/images/humidity.png"
             style="width: 50px; height: 50px"
           />
           <h5>{{ weatherData.main.humidity }} %</h5>
@@ -93,7 +93,7 @@
           "
         >
           <img
-            src="./assets/images/wind.png"
+            src="assets/images/wind.png"
             style="width: 50px; height: 50px"
           />
           <h5>{{ weatherData.wind.speed }} Km/h</h5></span
