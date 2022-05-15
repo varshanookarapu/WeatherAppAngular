@@ -18,7 +18,7 @@
 
 <div class="container">
   <div class="subcontainer1">
-    <img src="../assets/images/dayhot.jpg" *ngIf="weatherData.main.temp > 15" />
+    <img src="assets/images/dayhot.jpg" *ngIf="weatherData.main.temp > 15" />
     <img src="../assets/images/night.jpg" *ngIf="weatherData.main.temp <= 15" />
     <div class="weather-data">
       <div class="location">{{ weatherData.name }}</div>
